@@ -1,4 +1,4 @@
-# 📘 Agente Agile
+# 📘 Agente Agile....
 
 Este repositório contém notebooks desenvolvidos como parte do curso Agente de IA do I2A2. O código é construído gradualmente ao longo das atividades, com foco em aprendizado prático e colaboração entre os integrantes do grupo.
 
