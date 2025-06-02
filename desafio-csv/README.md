@@ -1,20 +1,27 @@
 # 🧾 Desafio — Agente para Notas Fiscais
 
-Este notebook permite realizar consultas em linguagem natural sobre arquivos CSV contendo 100 notas fiscais públicas.
+Este notebook permite realizar **perguntas em linguagem natural** sobre arquivos CSV contendo 100 notas fiscais públicas (cabeçalho e itens) do mês de janeiro de 2024.
 
 ---
 
 ## 🚀 Como usar
 
-1. Crie um arquivo `.env` na raiz do desafio com a chave da API Groq (exemplo em `.env.example`);
-2. Instale os pacotes com `pip install -r requirements.txt`;
-3. Execute o notebook `agente_nota_fiscal.ipynb` em ambiente como Google Colab, Jupyter ou VSCode;
-4. Use a última célula interativa para digitar perguntas como:
+1. Crie um arquivo `.env` com sua chave da Groq (veja o exemplo em `.env.example`);
+2. Rode o notebook em:
+   - Google Colab (recomendado) — já instala tudo automaticamente;
+   - VSCode ou Jupyter local — use `pip install -r requirements.txt` antes de executar;
+3. Monte seu Google Drive para acessar os arquivos CSV;
+4. Ajuste os caminhos dos arquivos:
+```python
+cabecalho_path = '/content/drive/MyDrive/SUA_PASTA/202401_NFs_Cabecalho.csv'
+itens_path = '/content/drive/MyDrive/SUA_PASTA/202401_NFs_Itens.csv'
+```
+5. No final do notebook, digite suas perguntas como:
 
 ```
-"Qual fornecedor recebeu o maior valor?"
-"Qual item teve maior volume entregue?"
-"Quais datas de emissão aparecem mais?"
+- Qual fornecedor recebeu o maior valor?
+- Qual item teve maior volume entregue?
+- Quais datas de emissão aparecem mais?
 ```
 
 Digite `sair` para encerrar a interação.
@@ -23,6 +30,6 @@ Digite `sair` para encerrar a interação.
 
 ## 📄 Arquivos
 
-- `agente_nota_fiscal.ipynb` — Notebook com a solução
-- `.env.example` — Exemplo de arquivo de variáveis de ambiente
-- `requirements.txt` — Pacotes necessários para execução
+- `agente_nota_fiscal.ipynb` — notebook com a solução
+- `.env.example` — exemplo de configuração com chave da API
+- `requirements.txt` — pacotes necessários para execução
